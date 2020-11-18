@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Task 2
+    </title>
+    <link rel="stylesheet" href="Task 2.2.css">
+  </head>
+  <body>
+    <form class="myForm" action="index.html" method="post">
+      <fieldset>
+        <legend>
+          Ваше имя или псевдоним
+        </legend>
+        <input type="text" name="name" placeholder="Имя" autofocus class="nameInput">
+      </fieldset>
+      <fieldset>
+        <legend>
+          Дата рождения
+        </legend>
+        <select name="birthdayDay">
+          <option value="day">День</option>
+        </select>
+        <select name="birthdayMonth">
+          <option value="month">Месяц</option>
+        </select>
+        <select name="birthdayYear">
+          <option value="year">Год</option>
+        </select>
+      </fieldset>
+      <fieldset class="book">
+        <legend>
+          Напишите названия трёх лучших книг
+        </legend>
+        <input type="text" name="book" placeholder="Книга 1" class="bookInput">
+        <input type="text" name="book" placeholder="Книга 2" class="bookInput">
+        <input type="text" name="book" placeholder="Книга 3" class="bookInput">
+      </fieldset>
+      <fieldset>
+        <legend>
+          Напишите нам все ваши пожелания
+        </legend>
+        <textarea name="feedback" rows="4" cols="80" placeholder="Комментарий"></textarea><br>
+      </fieldset>
+      <input type="submit" name="submit" value="Отправить" class="enterInput">
+    </form>
+  </body>
+</html>
