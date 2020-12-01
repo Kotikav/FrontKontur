@@ -1,0 +1,18 @@
+.profile{
+  border-style: solid;
+  border-width: 2%;
+  border-color: #000080;
+  width: 35%;
+  margin: auto;
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+
+.profile-text{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profile-img{
+  height: 250px;
+}
