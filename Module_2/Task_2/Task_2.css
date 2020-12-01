@@ -1,0 +1,56 @@
+legend {
+  padding: 2px 7px;
+}
+
+fieldset {
+  border: 0.5px dashed #4682B4;
+  padding: 17px 7px 10px 7px;
+  margin-bottom: 15px;
+}
+
+select {
+  border: 3px solid indigo;
+}
+
+textarea {
+  border: 3px solid indigo;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.myForm {
+  border: 4px double #4682B4;
+  padding: 20px;
+  display: block;
+}
+
+.nameInput {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: 3px solid indigo;
+}
+
+.bookInput {
+  display: inline;
+  box-sizing: border-box;
+  width: 32.5%;
+  border: 3px solid indigo;
+  margin: 0;
+}
+
+.enterInput {
+  margin-top: 15px;
+  background-color: indigo;
+  border-width: 0;
+  font-size: 13px;
+  padding: 7px;
+  color: white;
+}
+
+.book {
+  border: 0.5px dashed #4682B4;
+  padding: 17px 7px 10px 20px;
+  margin-bottom: 15px;
+}
