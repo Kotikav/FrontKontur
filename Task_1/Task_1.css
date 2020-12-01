@@ -1,0 +1,10 @@
+.table{
+  margin: auto;
+  width: 80%;
+  border-style: solid;
+  border-width: medium;
+  border-color: violet;
+  padding: 3%;
+  border-collapse: separate;
+  border-spacing: 40px 2px;
+}
