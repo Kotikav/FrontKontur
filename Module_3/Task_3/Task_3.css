@@ -1,60 +1,74 @@
 input {
-  appearance: none;
-
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  border: 1.5px solid rgba(0, 0, 0, .15);
-  outline: none;
   position: relative;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-input:checked::after {
-  content: ' ';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: black;
-  position: absolute;
-  left: 4px;
-  top: 4px;
-}
-
-input:disabled {
-  background-color: rgba(128, 128, 128, .15);
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  border: 1.5px solid rgba(0, 0, 0, .15);
-}
-
-input:disabled::after {
-  opacity: .5;
-}
-
-input:focus {
-  border: 2px solid #1E90FF;
-}
-
-[name="radio-group-1"] {
-  background: linear-gradient(0deg, rgba(128, 128, 128, .15), rgba(255, 255, 255, .15));
-}
-
-[name="radio-group-1"]:hover {
-  background: linear-gradient(0deg, rgba(128, 128, 128, .35), rgba(255, 255, 255, .35));
-  border: 1.5px solid rgba(0, 0, 0, .35);
-}
-
-[name="radio-group-1"]:active {
-  background-color: rgba(128, 128, 128, .15);
+  opacity: 0;
+  z-index: -1;
+  margin-top: 20px;
 }
 
 label {
   position: relative;
-  left: 7px;
-  top: -4px;
+  margin-left: 30px;
+  top: -10px;
+}
+
+input+label::before {
+  content: ' ';
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid rgba(0, 0, 0, .15);
+  position: absolute;
+  background: linear-gradient(0deg, rgba(128, 128, 128, .15), rgba(255, 255, 255, .15));
+  top: -2.5px;
+  left: -40px;
+}
+
+input:checked+label::after {
+  content: ' ';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  left: -33px;
+  top: 4.5px;
+}
+
+input:disabled+label::before {
+  background-color: rgba(128, 128, 128, .15);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid rgba(0, 0, 0, .15);
+}
+
+input:disabled+label::after {
+  opacity: .5;
+}
+
+input[name="radio-group-1"]:hover+label::before {
+  background: linear-gradient(0deg, rgba(128, 128, 128, .35), rgba(255, 255, 255, .35));
+  border: 1.5px solid rgba(0, 0, 0, .35);
+}
+
+input:focus+label::before {
+  border: 2px solid #1E90FF;
+  background: linear-gradient(0deg, rgba(128, 128, 128, .15), rgba(255, 255, 255, .15));
+}
+
+input[name="radio-group-1"]:active+label::before {
+  background-color: rgba(128, 128, 128, .15);
+}
+
+input[name="radio-group-1"]:active+label::after {
+  content: ' ';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  left: -33px;
+  top: 4.5px;
 }
 
 [name="radio-group-2"] ~ label {
