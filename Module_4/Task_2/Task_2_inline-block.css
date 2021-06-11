@@ -1,0 +1,29 @@
+html {
+  font-family: sans-serif;
+  font-size: 0px;
+}
+
+* {
+  margin: 0;
+}
+
+.menu {
+  display: inline-block;
+  width: 250px;
+  height: 100vh;
+  color: white;
+  background-color: #9007e5;
+  font-size: 20px;
+}
+
+ul {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.content {
+  display: inline-block;
+  width: calc(100vw - 250px);
+  font-size: 20px;
+}

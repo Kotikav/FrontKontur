@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+}
+
+.ad {
+  display: flex;
+  background-color: #9007e5;
+  align-items: center;
+  justify-content: center;
+  min-width: 270px;
+  min-height: 360px;
+  height: 133.3vw;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+  line-height: 50px;
+}
