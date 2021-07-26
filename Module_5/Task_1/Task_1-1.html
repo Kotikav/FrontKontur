@@ -6,37 +6,65 @@
   </head>
   <body>
     <div class="header">
-      <div class="header-logo">
-        <img class="header-logo__logo" src="" alt="logo">
+      <div class="header-logo header__header-logo">
+        <img class="header-logo__icon" src="" alt="logo">
+        <svg class="header-logo__dropdown"></svg>
       </div>
-      <div class="help">
-        <img class="help__logo" src="" alt="">
-        <a class="help__link" href="">Помощь</a>
-      </div>
-      <div class="profile">
-        <img class="profile__logo" src="" alt="">
-        <a class="profile__link" href="">Анна Преображенская</a>
-      </div>
-      <div class="exit">
-        <a class="exit__link" href="">Выйти</a>
+      <div class="header__header-right header-right">
+        <div class="header-right__link link">
+          <svg class="link__icon"></svg>
+          <a class="link__text" href="">Помощь</a>
+        </div>
+        <div class="header-right__link link">
+          <svg class="link__icon"></svg>
+          <a class="link__text" href="">Анна Преображенская</a>
+        </div>
+        <div class="header-right__link link">
+          <a class="link__text" href="">Выйти</a>
+        </div>
       </div>
     </div>
     <div class="content">
       <div class="form">
-        <h3 class="form__heading">Отправка доп. документов</h3>
-        <p class="form__text">Тип документа</p>
-        <select class="form__select">
-          <option>Подтверждение уплаты страховой...</option>
-        </select>
-        <p class="form__text">Подписант</p>
-        <input class="form__text-field" type="text" placeholder="Выберите участика сделки">
-        <p class="form__text">Файлы</p>
-        <a class="form__link-download" href="">Загрузить файл</a>
+        <div class="form__heading heading">
+          <h3 class="heading__text">Отправка доп. документов</h3>
+          <svg class="heading__item close"></svg>
+        </div>
+        <div class="form-field">
+          <div class="form-string">
+            <div class="form-string__text">
+              Тип документа
+            </div>
+            <select class="form-string__select">
+              <option>Подтверждение уплаты страховой...</option>
+            </select>
+          </div>
+          <div class="form-string">
+            <div class="form-string__text">
+              Подписант
+            </div>
+            <input class="form-string__text-field" type="text" placeholder="Выберите участика сделки">
+          </div>
+          <div class="form-string">
+            <div class="form-string__text">
+              Файлы
+            </div>
+            <div class="form-wrapper form-string__form-wrapper">
+              <div class="link form-wrapper__link">
+                <svg class="link__icon"></svg>
+                <a class="link__text" href="">Загрузить файл</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <hr class="form__horizont-line">
-        <a class="form__link-add" href="">Добавить документ</a>
-        <div class="form-wrapper">
-          <input class="form-wrapper__submit-button" type="submit" value="Подписать и отправить">
-          <input class="form-wrapper__exit-button" type="button" value="Закрыть">
+        <div class="form-link form-wrapper__link">
+          <svg class="form-link__icon"></svg>
+          <a class="form-link__text" href="">Добавить документ</a>
+        </div>
+        <div class="wrapper form__wrapper">
+          <input class="form-wrapper__button_theme_purple" type="submit" value="Подписать и отправить">
+          <input class="form-wrapper__button" type="button" value="Закрыть">
         </div>
       </div>
     </div>
