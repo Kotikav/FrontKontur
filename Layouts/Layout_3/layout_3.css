@@ -1,8 +1,9 @@
 body {
   margin: 0;
+  min-width: 1600px;
 }
 
-.root-wrapper {
+.main {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -39,8 +40,7 @@ body {
 }
 
 .header-wrapper__main-logo {
-  margin-left: 85px;
-  margin-top: 43px;
+  margin: 43px 0 0 85px;
 }
 
 .navi {
@@ -91,8 +91,7 @@ body {
 }
 
 .basket-wrapper {
-  margin-left: 45px;
-  margin-top: 70px;
+  margin: 70px 0 0 45px;
   position: relative;
 }
 
@@ -129,25 +128,23 @@ body {
   font-weight: 500;
   color: #EAEAEA;
   text-align: center;
-  margin: 62px 0 auto;
+  margin: 62px auto 0;
 }
 
 .content-wrapper__text {
   font-size: 24px;
   text-align: center;
   width: 730px;
-  letter-spacing: .04em;
+  letter-spacing: .96px;
   color: #E1E1E1;
   line-height: 33.94px;
-  margin: 0 auto;
-  margin-top: 66px;
+  margin: 66px auto 0;
 }
 
 .container {
-  margin: 0 auto;
-  margin: 65px 0 95px 0;
+  margin: 65px auto 95px;
   display: flex;
-  min-height: 397px;
+
 }
 
 .container-wrapper {
@@ -169,7 +166,7 @@ body {
 }
 
 .text-wrapper {
-  background-color: #1D1D1D8F;
+  background-color: rgba(29, 29, 29, .56);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,7 +178,7 @@ body {
 
 .text-wrapper__text {
   font-size: 48px;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .footer {
@@ -191,9 +188,7 @@ body {
 
 .footer-wrapper {
   max-width: 1600px;
-  margin: 0 auto;
-  margin-top: 140px;
-  margin-bottom: 114px;
+  margin: 140px auto 114px;
   display: flex;
   justify-content: space-between;
 }
@@ -209,7 +204,7 @@ body {
 .left-wrapper-block__heading-text {
   font-size: 36px;
   margin-bottom: 25px;
-  letter-spacing: 0.03em;
+  letter-spacing: 1.08px;
   text-align: center;
 }
 
@@ -249,7 +244,7 @@ body {
 .right-wrapper-block__heading-text {
   width: 360px;
   font-size: 36px;
-  letter-spacing: 0.03em;
+  letter-spacing: 1.08px;
   text-align: center;
 }
 
@@ -269,7 +264,7 @@ body {
   outline: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.18px;
   text-align: center;
   color: #E4E4E4;
 }
@@ -290,7 +285,7 @@ body {
   width: 342px;
   height: 73px;
   margin: 0 auto;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #FFF;
 }
 
 .button__text {
@@ -302,7 +297,7 @@ body {
   height: 69px;
 }
 
-@media (max-width: 1599px) {
+/* @media (max-width: 1599px) {
   .container {
     flex-direction: column;
     text-align: center;
@@ -315,4 +310,4 @@ body {
     width: 530px;
     left: 0;
   }
-}
+} */
