@@ -26,12 +26,12 @@ body {
   text-decoration: none;
 }
 
-.header {
+.header-wrapper {
   flex-grow: 0;
   display: flex;
 }
 
-.header-wrapper {
+.header {
   display: flex;
   margin: 0 auto;
   width: 1600px;
@@ -39,37 +39,37 @@ body {
   justify-content: space-between;
 }
 
-.header-wrapper__main-logo {
+.header__logo {
   margin: 43px 0 0 85px;
 }
 
-.navi {
+.navigation {
   display: flex;
   margin-left: 82px;
 }
 
-.navi-wrapper {
+.navigation-block {
   margin: 0 36px;
   padding-top: 78px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.navi-wrapper:first-child {
+.navigation-block:first-child {
   margin-left: 0;
 }
 
-.navi-wrapper:last-child {
+.navigation-block:last-child {
   margin-right: 0;
 }
 
-.navi-wrapper__elem {
+.navigation-block__element {
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #E4E4E4;
 }
 
-.navi-wrapper__elem_checked {
+.navigation-block__element_checked {
   font-weight: 600;
 }
 
@@ -81,11 +81,11 @@ body {
   text-decoration: none;
 }
 
-.header-link-wrapper {
+.phone-link-block {
   padding-top: 74px;
 }
 
-.header-wrapper-right {
+.info-block {
   margin-right: 85px;
   display: flex;
 }
@@ -95,7 +95,7 @@ body {
   position: relative;
 }
 
-.basket-wrapper__basket-count {
+.basket-wrapper__count {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -107,23 +107,23 @@ body {
   top: -3.36px;
 }
 
-.basket-count__text {
+.count__text {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   font-weight: 400;
 }
 
-.content {
+.content-wrapper {
   flex-grow: 1;
   background-color: #202020;
 }
 
-.content-wrapper {
+.content {
   margin: 0 auto;
   max-width: 1600px;
 }
 
-.content-wrapper__heading-text {
+.content__heading-text {
   font-size: 40px;
   font-weight: 500;
   color: #EAEAEA;
@@ -131,7 +131,7 @@ body {
   margin: 62px auto 0;
 }
 
-.content-wrapper__text {
+.content__text {
   font-size: 24px;
   text-align: center;
   width: 730px;
@@ -144,28 +144,14 @@ body {
 .container {
   margin: 65px auto 95px;
   display: flex;
-
+  justify-content: space-between;
 }
 
-.container-wrapper {
+.picture-wrapper {
   position: relative;
 }
 
-.container-wrapper::after {
-  content: '';
-  position: absolute;
-  background-color: #202020;
-  height: 100%;
-  width: 4px;
-  top: 0;
-  left: 0;
-}
-
-.container-wrapper:first-child::after {
-  width: 0;
-}
-
-.text-wrapper {
+.text-background {
   background-color: rgba(29, 29, 29, .56);
   display: flex;
   justify-content: center;
@@ -176,55 +162,55 @@ body {
   top: 125px;
 }
 
-.text-wrapper__text {
+.text-background__text {
   font-size: 48px;
   color: #FFF;
 }
 
-.footer {
+.footer-wrapper {
   flex-grow: 0;
   background-color: #242424;
 }
 
-.footer-wrapper {
+.footer {
   max-width: 1600px;
   margin: 140px auto 114px;
   display: flex;
   justify-content: space-between;
 }
 
-.left-wrapper {
+.contacts-block {
   width: 800px;
 }
 
-.left-wrapper-block:first-child {
+.contacts:first-child {
   margin-bottom: 160px;
 }
 
-.left-wrapper-block__heading-text {
+.contacts__heading-text {
   font-size: 36px;
   margin-bottom: 25px;
   letter-spacing: 1.08px;
   text-align: center;
 }
 
-.left-wrapper-link-wrapper {
+.contacts-link-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
 }
 
-.left-wrapper-link-wrapper:last-child {
+.contacts-link-wrapper:last-child {
   margin-bottom: 0;
 }
 
-.left-wrapper-link-wrapper__link {
+.contacts-link-wrapper__link {
   font-size: 24px;
   color: #A9A9A9;
   text-decoration: none;
 }
 
-.right-wrapper::before {
+.footer-form::before {
   content: '';
   position: absolute;
   height: 157px;
@@ -234,14 +220,14 @@ body {
   left: 0;
 }
 
-.right-wrapper {
+.footer-form {
   position: relative;
   width: 800px;
   display: flex;
   justify-content: center;
 }
 
-.right-wrapper-block__heading-text {
+.right-wrapper__heading-text {
   width: 360px;
   font-size: 36px;
   letter-spacing: 1.08px;
@@ -277,7 +263,7 @@ body {
   color: #898989;
 }
 
-.right-wrapper-block__button {
+.right-wrapper__button {
   display: flex;
   justify-content: center;
   align-items: center;
